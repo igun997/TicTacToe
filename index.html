@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tic Tac Toe</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="assets/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/fontawesome/dist/fontawesome.min.css">
+  <link rel="stylesheet" href="assets/toastr/toastr.min.css">
+  <link rel="stylesheet" href="assets/style.css">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+  <div id="intro-screen" style="margin-right:1000px" class="center">
+    <h2>Choose your symbol:</h2>
+    <button type="button" id="choose-x" class="choose">X</button>
+    <button type="button" id="choose-o" class="choose">O</button>
+  </div>
+
+  <div id="box-screen" class="center hidden">
+    <h2>Board Selection :</h2>
+    <table>
+      <tr>
+        <td>
+          <input type="text" id="row" readonly placeholder="Row" class="form-control" value="3">
+        </td>
+        <td>X</td>
+        <td>
+          <input type="text" id="col" readonly placeholder="Col" class="form-control" value="3">
+        </td>
+      </tr>
+      <tr>
+        <td colspan="3">
+          <button type="button" id="boardselection" class="btn btn-success">
+            Play Now !
+          </button>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <div id="game-screen" class="center hidden">
+    <table class="center" style="max-width:auto;max-height:auto;" id="boardgame" border="1px">
+      <tr>
+        <td>
+          <button type="button" class="cell" id="cell00"></button>
+        </td>
+        <td>
+          <button type="button" class="cell" id="cell01"></button>
+        </td>
+        <td>
+          <button type="button" class="cell" id="cell02"></button>
+        </td>
+      </tr>
+    </table>
+    <button type="button" id="restart">Restart</button>
+  <div>
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <script src="assets/jquery/dist/jquery.min.js"></script>
+      <script src="assets/bootstrap/dist/js/bootstrap.min.js"></script>
+      <script src="assets/animejs/lib/anime.min.js"></script>
+      <script src="assets/toastr/toastr.min.js"></script>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/mathjs/5.4.2/math.min.js" charset="utf-8"></script>
+      <script src="assets/index.js"></script>
+
+</body>
+
+</html>
